@@ -73,7 +73,7 @@ namespace SwaggerWebAPI
             //Enable middleware to server SwaggerUI (HTML, JS, CS, ...), specifying the Swagger JSON endpoint ...
             app.UseSwaggerUI(options =>
             {
-                //f using directories with IIS or a reverse proxy, set the Swagger endpoint to a relative path using the ./ prefix, eg: "./swagger/v1/swagger.json". 
+                //If using directories with IIS or a reverse proxy, set the Swagger endpoint to a relative path using the ./ prefix, eg: "./swagger/v1/swagger.json". 
                 //Using "/swagger/v1/swagger.json" instructs the app to look for the JSON file at the true root of the URL (plus the route prefix, if used). 
                 //For example, use "http://localhost:<port>/<route_prefix>/swagger/v1/swagger.json" instead of "http://localhost:<port>/<virtual_directory>/<route_prefix>/swagger/v1/swagger.json".
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger sample v1");

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwaggerWebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SwaggerWebAPI.Controllers.ValuesController.Get">
+            <summary>
+            Gets values from the ValuesController
+            </summary>
+            <remarks>
+            Sample request:
+            <code>GET api/values</code>
+            </remarks>
+            <returns>A list of string values</returns>
+        </member>
+        <member name="M:SwaggerWebAPI.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            Gets an Item object
+            <remarks>
+            Sample request:
+            <code>GET api/values/5</code>
+            </remarks>
+            </summary>
+            <param name="id">An integer value</param>
+            <returns>An Item with the entered integer value</returns>
+            <response code="200">If the entered value is ok</response>
+            <response code="400">If the entered value is negative</response>
+        </member>
+    </members>
+</doc>
